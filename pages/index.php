@@ -30,7 +30,7 @@
 
             <li class="nav-item">
               <a class="nav-link active"
-                href="#">
+                href="oportunidades.php">
                 Oportunidades
               </a>
             </li>

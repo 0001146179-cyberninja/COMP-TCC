@@ -27,7 +27,7 @@
 
             <li class="nav-item">
               <a class="nav-link active"
-                href="#">
+                href="../pages/oportunidades.php">
                 Oportunidades
               </a>
             </li>

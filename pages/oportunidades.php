@@ -1,157 +1,119 @@
+<?php session_start() ?>
 <?php include '../views/header.php' ?>
-<?php include '../views/navbar.php'?>
+<?php include '../views/navbar.php' ?>
 <link rel="stylesheet" href="../assets/style/style.css">
-<link rel="stylesheet" href="../assets/style/perfilStyle.css">
+<link rel="stylesheet" href="../assets/style/oportunidadesStyle.css">
 
 
+  <!--Conteúdo-->
 
+  <section class="conteudo">
 
-<section class="profile-wrapper">
+    <h2 class="titulo-secao">
+      OPORTUNIDADES
+    </h2>
 
-    <div class="container">
+    <div class="cards">
 
-        <div class="profile-layout">
+      <!-- Card 1 -->
+      <div class="card">
+        <form action="curso.php" method="GET">
 
-            <div class="row g-0">
+        <img src="../assets/images/guindaste.jpg"
+          alt="Guindaste">
 
-                <!-- ESQUERDA -->
-                <div class="col-lg-3">
+        <span class="categoria">
+          Do Zero ao Canteiro
+        </span>
 
-                    <div class="left-side text-center">
+        <h3>
+          Presencial (com aulas práticas em campo)
+        </h3>
 
-                        <img 
-                            src="https://i.pravatar.cc/300"
-                            class="profile-image"
-                        >
+        <h4><p>40 Horas</p></h4>
 
-                        <div class="profile-name">
-                            João Silva
-                        </div>
+        <p>
+          Curso totalmente focado na mão na massa. 
+          Você vai aprender desde o checklist inicial da máquina (inspeção de rotina) 
+          até manobras de escavação em terrenos instáveis, 
+          carregamento de caçambas e nivelamento de solo.
+        </p>
 
-                        <div class="profile-age">
-                            24 anos
-                        </div>
+        <p>Treinamento rigoroso baseado nas normas de segurança NR-11 e NR-12, com 
+            emissão de carteira de operador válida em todo o território nacional.</p><br>
 
-                        <div class="mini-info">
-                            <strong>Email:</strong><br>
-                            joao@email.com
-                        </div>
+        <input type="number" value="1" name="cursoId" hidden>
+        <button type="submit" class="btn btn-orange me-3">Informações do Curso</button>
+        </form>
 
-                        <div class="mini-info">
-                            <strong>Telefone:</strong><br>
-                            (21) 99999-9999
-                        </div>
+      </div>
 
-                        <div class="mini-info">
-                            <strong>Localização:</strong><br>
-                            Rio de Janeiro - RJ
-                        </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <form action="curso.php" method="GET">
+        <img src="../assets/images/card2.png"
+          alt="Guindaste">
 
-                    </div>
+        <span class="categoria">
+            Operação e Precisão em Guindastes
+        </span>
 
-                </div>
+        <h3>
+          Híbrido (Teoria online e prática presencial)
+        </h3>
 
-                <!-- CENTRO -->
-                <div class="col-lg-6">
+        <h4><p>60 Horas</p></h4>
 
-                    <div class="center-side">
+        <p>
+          Um curso de alta performance para quem quer dominar o içamento de grandes 
+          estruturas. As aulas cobrem a leitura complexa de tabelas de carga, 
+          cálculo de plano de rigging, física de tombamento, sinalização padrão e 
+          operação em condições climáticas adversas.
+        </p>
 
-                        <div class="section-title">
-                            Currículo
-                        </div>
+        <p>Uso de simuladores de realidade virtual de última 
+            geração antes da prática real no guindaste, garantindo total segurança no aprendizado.</p>
 
-                        <div class="resume-box">
+        <input type="number" value="2" name="cursoId" hidden>
+        <button type="submit" class="btn btn-orange me-3">Informações do Curso</button>
+        </form>
+      </div>
 
-                            Desenvolvedor Full Stack com experiência em
-                            criação de sistemas web modernos utilizando
-                            PHP, MySQL, JavaScript e Bootstrap.
+      <!-- Card 3 -->
+      <div class="card">
+        <form action="curso.php" method="GET">
+        <img src="../assets/images/guindaste.jpg"
+          alt="Guindaste">
 
-                            <br><br>
+        <span class="categoria">
+          Diagnóstico e Eletrônica Embarcada
+        </span>
 
-                            Possui conhecimento em APIs REST,
-                            autenticação de usuários, dashboards,
-                            sistemas administrativos e interfaces modernas.
+        <h3>
+          EAD
+        </h3>
 
-                            <br><br>
+        <h4><p>24 Horas</p></h4>
 
-                            Experiência com Laravel, React,
-                            versionamento Git e bancos de dados relacionais.
+        <p>
+          Perfeito para quem quer sair da mecânica tradicional e entrar na era digital. 
+          O foco é o uso de softwares de diagnóstico (scanners), 
+          leitura de códigos de falha (DTC), calibração de sensores hidráulicos e 
+          interpretação de dados de telemetria das principais marcas do mercado.
+        </p>
 
-                            <br><br>
+        <p>Acesso a uma comunidade exclusiva de alunos e professores para tirar dúvidas 
+            sobre problemas reais de oficina por 6 meses após o término do curso.</p><br>
 
-                            Busca oportunidades para crescimento profissional
-                            e desenvolvimento de projetos escaláveis
-                            e performáticos.
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- DIREITA -->
-                <div class="col-lg-3">
-
-                    <div class="right-side">
-
-                        <div class="info-card">
-
-                            <div class="info-title">
-                                Habilidades
-                            </div>
-
-                            <span class="tag">PHP</span>
-                            <span class="tag">Laravel</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Bootstrap</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">React</span>
-
-                        </div>
-
-                        <div class="info-card">
-
-                            <div class="info-title">
-                                Experiência
-                            </div>
-
-                            3 anos trabalhando com desenvolvimento web,
-                            sistemas administrativos e APIs.
-
-                        </div>
-
-                        <div class="info-card">
-
-                            <div class="info-title">
-                                Formação
-                            </div>
-
-                            Ciência da Computação<br>
-                            Universidade XYZ
-
-                        </div>
-
-                        <div class="info-card">
-
-                            <div class="info-title">
-                                Idiomas
-                            </div>
-
-                            Português<br>
-                            Inglês Intermediário
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
+        <input type="number" value="3" name="cursoId" hidden>
+        <button type="submit" class="btn btn-orange me-3">Informações do Curso</button>
+        </form>
+      </div>
 
     </div>
 
-</section>
+  </section>
+
+  <h3 class="more">Mais por vir...</h3>
 
 <?php include '../views/footer.php' ?>

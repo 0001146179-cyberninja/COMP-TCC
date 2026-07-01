@@ -1,0 +1,55 @@
+/*Cores
+
+FF521 Laranja
+FFFFFF Branco
+171614 Preto
+CED0CE Cinza
+FBAF00 Amarelo
+
+*/
+
+.titulo{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: grey;
+    justify-self: center;
+    text-decoration: underline;
+}
+
+.more{
+    color: gray;
+    text-decoration: underline;
+    justify-self: center;
+}
+
+.btn-orange{
+    width: 91%;
+}
+
+.curso-info{
+    margin-top: 32px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 8px 0px;
+    width: 40%;
+    justify-self: center;
+    padding: 15px;
+}
+
+.curso-info h3{
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+.curso-info h2{
+ color: gray;
+}
+
+.curso-info h3, h4, h2{
+    margin-bottom: 16px;
+}
+
+#subscribe{
+    margin-top: 24px;
+    display: block;
+    justify-self: center;
+}
