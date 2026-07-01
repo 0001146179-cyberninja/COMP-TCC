@@ -1,0 +1,55 @@
+.titulo{
+    text-align: center;
+    color: #000000;
+    margin: 30px 0;
+    font-size: 36px;
+}
+
+.vagas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.vaga{
+    width: 340px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border-top: 6px solid #e78505;
+}
+
+
+
+.vaga h2{
+    color: #e78505;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.vaga p{
+    margin: 8px 0;
+    color: #444;
+    line-height: 1.5;
+}
+
+button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #e78505;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #df960f;
+}
+
+

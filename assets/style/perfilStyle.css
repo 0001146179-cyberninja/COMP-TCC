@@ -1,0 +1,132 @@
+
+    body{
+        background: #1a1a1a;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+
+    /* CONTAINER */
+
+    .profile-wrapper{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .profile-layout{
+        background: #242424;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,.4);
+    }
+
+    /* COLUNA ESQUERDA */
+
+    .left-side{
+        background: #202020;
+        padding: 30px;
+        border-right: 1px solid #333;
+        height: 100%;
+    }
+
+    .profile-image{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #ff7300;
+        margin-bottom: 20px;
+    }
+
+    .profile-name{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .profile-age{
+        color: #ff7300;
+        margin-bottom: 25px;
+    }
+
+    .mini-info{
+        background: #2e2e2e;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    .mini-info strong{
+        color: #ff7300;
+    }
+
+    /* CENTRO */
+
+    .center-side{
+        padding: 35px;
+        border-right: 1px solid #333;
+    }
+
+    .section-title{
+        color: #ff7300;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .resume-box{
+        background: #2c2c2c;
+        padding: 25px;
+        border-radius: 12px;
+        line-height: 1.8;
+        color: #d8d8d8;
+    }
+
+    /* DIREITA */
+
+    .right-side{
+        padding: 30px;
+        background: #202020;
+    }
+
+    .info-card{
+        background: #2d2d2d;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        transition: .3s;
+    }
+
+    .info-card:hover{
+        transform: translateY(-3px);
+        background: #343434;
+    }
+
+    .info-title{
+        color: #ff7300;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .tag{
+        display: inline-block;
+        background: #ff7300;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 30px;
+        margin: 5px 5px 0 0;
+        font-size: 14px;
+    }
+
+    @media(max-width: 991px){
+
+        .left-side{
+            border-right: none;
+            border-bottom: 1px solid #333;
+        }
+
+        .center-side{
+            border-right: none;
+            border-bottom: 1px solid #333;
+        }
+
+    }

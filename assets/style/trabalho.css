@@ -1,0 +1,81 @@
+body {
+    background-color: #f4f6f9;
+}
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+    min-height: 100vh;
+}
+
+.vagas h1 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.card h3 {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #0f1115;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 0.85rem;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #777777;
+    margin-bottom: 15px;
+}
+
+.btn-orange {
+    background-color: #ff5a00 !important;
+    color: #ffffff !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+.btn-orange:hover {
+    background-color: #e04f00 !important;
+}

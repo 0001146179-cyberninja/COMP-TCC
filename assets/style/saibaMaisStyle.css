@@ -1,0 +1,17 @@
+body{
+    background-color: #171614;
+}
+
+.saiba-mais-page{
+
+    background-color: whitesmoke;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+
+    border-radius: 32px;
+    padding: 16px;
+    box-shadow: 4px 4px 4px 1px rgb(70, 70, 70);
+
+}
