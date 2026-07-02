@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="../assets/style/stylef.css">
 
     <div class="novidades">
-        <h1>Novidades</h1>
+        <h1 class="titulo-curso">Novidades</h1>
 
       <!--Carousel-->
 
@@ -109,11 +109,11 @@
 
   <section class="cursos">
 
-    <h2 class="titulo-cursos">
-      CURSOS
+    <h2 class="titulo-curso">
+      CURSOS EXTERNOS
     </h2>
 
-    <div class="cards">
+    <div class="cards-info">
 
       <!-- Card 1 -->
       <div class="card">
@@ -184,7 +184,7 @@
 
       </div>
 
-       <!-- Card 3 -->
+      <!-- Card 3 -->
       <div class="card">
 
         <img src="../assets/images/frota.jpg"
@@ -216,6 +216,125 @@
           class="btn btn-orange ms-2 me-2">
 
           Saiba mais 
+
+        </a>
+
+      </div>
+
+
+       
+    </div>
+
+    <h2 class="titulo-curso">
+      NOTÍCIAS
+    </h2>
+
+    <div class="cards-info">
+
+  
+      <!-- Card 4 -->
+      <div class="card">
+
+        <img src="../assets/images/guindaste.jpg"
+          alt="Guindaste">
+
+        <span class="categoria">
+          LANÇAMENTO
+        </span>
+
+        <h3>
+          LiuGong lança guindastes sobre caminhão no Brasil
+        </h3>
+
+        <p>
+          Modelos LTC800T5 e LTC900T5 são voltados
+          para obras de alta complexidade.
+        </p>
+
+        <div class="info">
+
+          <span>25 Fev 2026</span>
+
+          <span>m&t</span>
+
+        </div>
+
+        <a href="https://revistamt.com.br/Noticias/Exibir/liugong-lanca-guindastes-sobre-caminhao-no-brasil"
+          class="btn btn-orange ms-2 me-2">
+
+          Leia o artigo
+
+        </a>
+
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+
+        <img src="../assets/images/varias maquinas.webp"
+          alt="Máquinas">
+
+        <span class="categoria">
+          NOTÍCIAS
+        </span>
+
+        <h3>
+          Grupo brasileiro fecha parceria global
+        </h3>
+
+        <p>
+          Grupo Osvaldo Zilli amplia atuação
+          no setor de infraestrutura.
+        </p>
+
+        <div class="info">
+
+          <span>11 Fev 2026</span>
+
+          <span>Compre Rural</span>
+
+        </div>
+
+        <a href="https://www.comprerural.com/"
+          class="btn btn-orange ms-2 me-2">
+
+          Leia o artigo
+
+        </a>
+
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+
+        <img src="../assets/images/divulgacao-XCMG.webp"
+          alt="XCMG">
+
+        <span class="categoria">
+          INVESTIMENTO
+        </span>
+
+        <h3>
+          XCMG intensifica investimentos no Brasil
+        </h3>
+
+        <p>
+          Empresa chinesa anuncia novo centro de
+          pesquisa e desenvolvimento.
+        </p>
+
+        <div class="info">
+
+          <span>17 Out 2025</span>
+
+          <span>CNN Brasil</span>
+
+        </div>
+
+        <a href="https://www.cnnbrasil.com.br/"
+          class="btn btn-orange ms-2 me-2">
+
+          Leia o artigo
 
         </a>
 

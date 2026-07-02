@@ -1,43 +1,7 @@
 <?php session_start() ?>
 <?php include '../views/header.php' ?>
+<?php include '../views/navbar.php' ?>
 
-
-<header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-      <div class="container">
-
-        <!--Logo-->
-        <a class="navbar-brand fw-bold" href="index.php">
-          <img src="../assets/images/icons/placeholder_icon.png" alt="" height="35px" width="35px">
-          COMP
-        </a>
-
-        <!--Botão Mobile-->
-        <button class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent">
-
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Conteúdo Navbar -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </nav>
-
-
-</header>
 
 <link rel="stylesheet" href="../assets/style/style.css">
 <link rel="stylesheet" href="../assets/style/registerStyle.css">

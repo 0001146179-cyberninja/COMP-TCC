@@ -27,38 +27,113 @@ body{
   font-weight: bold;
 }
 
-.cards{
-  display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-  justify-content: center;
+/* --- Container dos Cards (Garante a organização em grade) --- */
+.cards-info {
+    display: grid;
+    /* Cria 3 colunas iguais no computador, adaptando para menos em telas menores */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 25px; /* Espaço entre os cards */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.card{
-  width: 350px;
-  border: none;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  background: white;
-  padding-bottom: 20px;
+/* --- Estrutura Individual do Card --- */
+.card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden; /* Garante que a imagem respeite as bordas arredondadas */
+    padding-bottom: 20px; /* Espaço interno na parte de baixo */
+    
+    /* O SEGREDO DO ALINHAMENTO: */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Força todos os cards da linha a terem a mesma altura máxima */
 }
 
-.card img{
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+/* --- Imagem do Card --- */
+.card img {
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as fotos ficarem iguais */
+    object-fit: cover; /* Recorta a imagem proporcionalmente sem distorcer */
 }
 
-.card h3{
-  font-size: 22px;
-  padding: 15px;
+/* --- Textos e Elementos Internos --- */
+.card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #202020;
+    margin: 15px 20px 10px 20px;
+    line-height: 1.4;
 }
 
-.card p{
-  padding: 0 15px;
-  color: #555;
+.card p {
+    font-size: 14px;
+    color: #555555;
+    margin: 0 20px 15px 20px;
+    line-height: 1.6;
 }
+
+/* --- Rodapé com Data e Fonte --- */
+.card .info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 15px 20px;
+    font-size: 12px;
+    color: gray;
+    border-top: 1px solid #eeeeee;
+    padding-top: 10px;
+}
+
+/* Categorias (Lançamento, Notícias, etc.) */
+.card .categoria, 
+.card .nome_curso {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff; /* Laranja tema */
+    margin: 15px 20px 0 20px;
+    text-transform: uppercase;
+}
+
+/* --- O BOTÃO ALINHADO EMBAIXO --- */
+.card .btn-orange {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    
+    /* Empurra o botão de forma magnética para o fundo do card */
+    margin: auto 20px 0 20px; 
+}
+
+/* --- Título da Seção de Cursos / Notícias --- */
+.titulo-curso {
+    text-align: center;
+    color: #202020;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 40px 0 20px 0;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Linha decorativa embaixo do título principal */
+.titulo-curso::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ff6600; /* Laranja tema */
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
 
 .categoria{
   background: #6c757d;
@@ -311,4 +386,60 @@ body{
 .menu-item.text-danger:hover {
     background-color: rgba(220, 53, 69, 0.1); /* Fundo vermelho clarinho */
     color: #dc3545 !important;
+}
+
+/* --- Estilos Gerais da Navbar --- */
+.navbar {
+    background-color: #ffffff !important; /* Força um fundo branco limpo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Sombra leve abaixo da barra */
+    padding: 0px 0;
+}
+
+/* --- Alinhamento da Logo --- */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a imagem do logo e o texto COMP */
+    color: #202020 !important;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* Evita que a logo distorça caso mude o tamanho */
+.navbar-brand img {
+    object-fit: contain; 
+    height: 80px; /* Reduzi um pouco a altura para não quebrar a barra */
+    width: auto;  /* Ajusta a largura proporcionalmente */
+}
+
+/* --- Links de Navegação --- */
+.navbar-nav .nav-link {
+    color: #555555 !important;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    transition: color 0.2s ease;
+}
+
+/* Efeito Hover nos Links (Tom de Laranja Industrial) */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #e65100 !important; /* Laranja combinando com a máquina do logo */
+}
+
+/* --- Menu Dropdown --- */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave no menu que desce */
+    border-radius: 8px;
+}
+
+.dropdown-item {
+    color: #444 !important;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(230, 81, 0, 0.08); /* Fundo laranja bem clarinho no hover */
+    color: #e65100 !important;
 }

@@ -7,7 +7,7 @@
 
         <!--Logo-->
         <a class="navbar-brand fw-bold" href="index.php">
-          <img src="../assets/images/icons/placeholder_icon.png" alt="" height="35px" width="35px">
+          <img src="../assets/images/icons/logocomp.png" alt="" height="100px" width="200px">
           COMP
         </a>
 
@@ -26,7 +26,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link active"
+              <a class="nav-link"
                 href="../pages/oportunidades.php">
                 Oportunidades
               </a>
@@ -77,21 +77,6 @@
 
           </ul>
 
-          <!-- Busca -->
-          <form class="d-flex">
-
-            <input class="form-control me-2"
-              type="search"
-              placeholder="Buscar">
-
-            <button class="btn btn-outline-success"
-              type="submit">
-
-              Buscar
-            </button>
-
-          </form>
-
         </div>
 
       </div>
@@ -106,7 +91,7 @@
 
 <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="staticBackdropLabel">CONFIGURAÇÕES</h5>
+    <h5 class="offcanvas-title" id="staticBackdropLabel">MENU</h5>
     <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">

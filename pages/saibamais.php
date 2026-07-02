@@ -1,8 +1,9 @@
 <?php session_start(); ?>
 <?php include '../views/header.php' ?>
 <?php include '../views/navbar.php'?>
-<link rel="stylesheet" href="../assets/style/style.css">
 <link rel="stylesheet" href="../assets/style/saibaMaisStyle.css">
+<link rel="stylesheet" href="../assets/style/style.css">
+
 
     <div class="saiba-mais-page">
         <h1>Sobre o COMP</h1>

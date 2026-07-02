@@ -25,7 +25,7 @@ if ($_SESSION['msg'] != ""){
     </h2>
 
 
-    <div class="cards">
+    <div class="cards-info">
 
       <?php 
         $stmt = $pdo->query('SELECT id, nome, tipo, texto1, texto2, fornecedor, horas FROM cursos');

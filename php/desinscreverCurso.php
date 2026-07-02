@@ -12,7 +12,7 @@
         if (!$cursoId || !$user) {
             $_SESSION['msg'] = 'Falha ao Cancelar Inscrição.'. $user;
             $_SESSION['type'] = 'Erro';
-            header("Location: ../pages/oportunidades.php");
+            header("Location: ../pages/cursosUsuario.php");
             exit; 
         }
 
@@ -43,7 +43,7 @@
 
             $_SESSION['msg'] = "Você se desinscreveu com sucesso!";
             $_SESSION['type'] = 'Sucesso';
-            header("Location: ../pages/index.php");
+            header("Location: ../pages/cursosUsuario.php");
         }
    
     }
