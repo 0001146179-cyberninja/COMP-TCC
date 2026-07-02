@@ -2,7 +2,6 @@
 <?php include '../views/header.php' ?>
 <?php include '../views/navbar.php'?>
 <link rel="stylesheet" href="../assets/style/style.css">
-<link rel="stylesheet" href="../assets/style/stylef.css">
 
     <div class="novidades">
         <h1 class="titulo-curso">Novidades</h1>

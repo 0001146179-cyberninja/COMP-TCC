@@ -17,7 +17,6 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
         $genero   = $_POST['genero'];
         $data_atualizacao = date('Y-m-d H:i:s');
 
-        // CORREÇÃO 4: Protegendo contra SQL Injection usando Named Parameters (:email, :senha)
         $sql = "SELECT id FROM usuarios WHERE email = :email AND senha = :senha";
         $check = $pdo->prepare($sql);
         $check->execute([
@@ -25,13 +24,11 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
             ':senha' => $oldSenha
         ]);
         
-        // Retorna a linha do usuário caso ele exista
         $usuario = $check->fetch(PDO::FETCH_ASSOC);
 
         if ($usuario) {
             $id_usuario = $usuario['id'];
 
-            // CORREÇÃO 1: Usando placeholders na query de UPDATE (Segurança e sintaxe)
             $stmt = $pdo->prepare("UPDATE usuarios SET 
                 nome = :nome, 
                 email = :email, 
@@ -55,7 +52,6 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == true) {
                 ':id'               => $id_usuario
             ]);
 
-            // CORREÇÃO 2: Atualizando a $_SESSION com os dados novos vindos do $_POST
             $_SESSION['nome']             = $nome;
             $_SESSION['email']            = $email; // Importante atualizar o e-mail também!
             $_SESSION['senha']            = $senha;

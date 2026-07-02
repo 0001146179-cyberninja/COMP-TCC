@@ -126,9 +126,9 @@
             Cursos
         </a> <br>
 
-        <a href="/seguranca" class="menu-item">
+        <a href="../pages/suporte.php" class="menu-item">
             <i class="bi bi-shield-lock"></i>
-            Segurança
+            Suporte
         </a> <br>
 
         <a href="../php/logout.php" class="menu-item text-danger">
