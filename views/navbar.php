@@ -100,7 +100,7 @@
     
 <?php if ($_SESSION['login'] == true){ ?>
 <div class="user-tab">
-<button class="btn btn-orange" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+<button class="btn btn-perfil" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
   ☰
 </button>
 
@@ -114,10 +114,10 @@
        <!-- Perfil -->
     <div class="user-menu text-center mb-4">
         <a href="/perfil" class="profile-link">
-            <img src="img/user.jpg" alt="Perfil" class="profile-avatar">
+            <img src="../assets/images/icons/icon-7797704_1280.png" alt="Perfil" class="profile-avatar">
         </a>
 
-        <h5 class="mt-3"><?php $_SESSION['nome'] ?></h5>
+        <h5 class="mt-3"><?= $_SESSION['nome'] ?></h5>
         <small>Meu Perfil</small>
     </div>
 
@@ -136,9 +136,9 @@
             Configurações
         </a> <br>
 
-        <a href="/acessibilidade" class="menu-item">
+        <a href="cursosUsuario.php" class="menu-item">
             <i class="bi bi-universal-access"></i>
-            Acessibilidade
+            Cursos
         </a> <br>
 
         <a href="/seguranca" class="menu-item">

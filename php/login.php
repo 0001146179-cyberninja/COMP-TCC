@@ -35,7 +35,7 @@
                         header("Location: ../pages/index.php");
 
                     } else {
-                        $_SESSION['msg'] = 'Senha ou Email incorretos!';
+                        $_SESSION['msg'] = 'Senha ou Email incorretos!1';
                         $_SESSION['type'] = 'Erro';
                         header("Location: ../pages/login.php");
                     }
@@ -43,7 +43,7 @@
                 }
 
             } else {
-                $_SESSION['msg'] = 'Senha ou Email incorretos!';
+                $_SESSION['msg'] = 'Senha ou Email incorretos!2';
                 $_SESSION['type'] = 'Erro';
                 header("Location: ../pages/login.php");
             }

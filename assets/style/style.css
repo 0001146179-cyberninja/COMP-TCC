@@ -241,3 +241,74 @@ body{
     scale: 120%;
     margin-top: 5;
 }
+
+/* --- Botão que abre o menu (Hambúrguer) --- */
+.btn-perfil {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.btn-perfil:hover {
+    color: rgb(71, 145, 168); /* Mesma cor azul usada nos seus outros botões */
+}
+
+/* --- Seção do Avatar / Perfil --- */
+.user-menu {
+    padding: 15px 0;
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%; /* Deixa a foto perfeitamente redonda */
+    object-fit: cover;  /* Não deixa a imagem distorcer */
+    border: 3px solid #ff6600;
+    transition: transform 0.2s;
+}
+
+.profile-avatar:hover {
+    transform: scale(1.05); /* Dá um leve zoom ao passar o mouse */
+}
+
+.user-menu h5 {
+    color: #202020;
+    margin-bottom: 2px;
+}
+
+.user-menu small {
+    color: gray;
+}
+
+/* --- Itens do Menu de Navegação --- */
+.menu-options {
+    margin-top: 20px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaço entre o ícone e o texto */
+    padding: 12px 15px;
+    color: #444;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Efeito ao passar o mouse nos links normais */
+.menu-item:hover {
+    background-color: rgba(71, 145, 168, 0.1); /* Fundo azul bem clarinho */
+    color: rgb(71, 145, 168);
+}
+
+/* Ajuste específico para o link de Sair (Vermelho) */
+.menu-item.text-danger:hover {
+    background-color: rgba(220, 53, 69, 0.1); /* Fundo vermelho clarinho */
+    color: #dc3545 !important;
+}
