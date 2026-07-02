@@ -21,7 +21,7 @@
                 header("Location: ../pages/cadastro.php");
             } else {
                 $dataAtual = date('Y-m-d H:i:s');
-                $add = $pdo->prepare("INSERT INTO usuarios (email, senha, data_criacao, data_atualizacao) VALUES ('$email', '$senha', '$dataAtual', '$dataAtual')");
+                $add = $pdo->prepare("INSERT INTO usuarios (email, senha, data_criacao, data_atualizacao, cursos) VALUES ('$email', '$senha', '$dataAtual', '$dataAtual', '[]')");
                 $add->execute();
                 $_SESSION['msg'] = "Conta criada com sucesso, efetue o login!";
                 $_SESSION['type'] = 'Sucesso';

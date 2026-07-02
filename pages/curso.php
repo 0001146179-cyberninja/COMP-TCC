@@ -54,6 +54,7 @@
     break;
   
   }
+
   echo("<div class='curso-info'>");
   echo("<h3>$cursoNome</h3>");
   echo("<h2>$cursoModalidade</h2>");
@@ -62,11 +63,9 @@
   echo("<h5>$cursoLinha2</p></h5>");
   echo("</div>");
   
-  ?>
 
-  <button id="subscribe" class="btn btn-orange" style="width: 40%;">Inscreva-se</button>
+  echo("<a href='../php/inscreverCurso.php?cursoId=$cursoId' id='subscribe' class='btn btn-orange' style='width: 40.8%;'>Inscreva-se</a>");
 
-
-  
+   ?>
 
 <?php include '../views/footer.php' ?>

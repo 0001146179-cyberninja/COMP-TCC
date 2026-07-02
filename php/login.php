@@ -31,6 +31,7 @@
                         $_SESSION['login'] = true;
                         $_SESSION['msg'] = 'Logado com sucesso!';
                         $_SESSION['type'] = 'Sucesso';
+                        $_SESSION['email'] = $email;
                         header("Location: ../pages/index.php");
 
                     } else {

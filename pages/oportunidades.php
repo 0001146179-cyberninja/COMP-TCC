@@ -4,6 +4,14 @@
 <link rel="stylesheet" href="../assets/style/style.css">
 <link rel="stylesheet" href="../assets/style/oportunidadesStyle.css">
 
+<?php 
+if ($_SESSION['msg'] != ""){
+  echo "<div id=". $_SESSION['type'] .">";
+  echo "<p>" . $_SESSION['msg'] . "</p>";
+  echo "</div>";
+  $_SESSION['msg'] = "";
+  $_SESSION['type'] = "";
+} ?>
 
   <!--Conteúdo-->
 
