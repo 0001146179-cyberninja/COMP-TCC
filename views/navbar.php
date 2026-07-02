@@ -98,7 +98,7 @@
 
        <!-- Perfil -->
     <div class="user-menu text-center mb-4">
-        <a href="/perfil" class="profile-link">
+        <a href="../pages/perfil.php" class="profile-link">
             <img src="../assets/images/icons/icon-7797704_1280.png" alt="Perfil" class="profile-avatar">
         </a>
 
@@ -111,7 +111,7 @@
     <!-- Menu -->
     <div class="menu-options">
 
-        <a href="perfil.php" class="menu-item">
+        <a href="../pages/perfil.php" class="menu-item">
             <i class="bi bi-person-circle"></i>
             Perfil
         </a> <br>

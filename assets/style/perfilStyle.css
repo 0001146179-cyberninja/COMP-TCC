@@ -1,132 +1,165 @@
+/* --- Container Principal (Grid de duas colunas) --- */
+.perfil-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 300px 1fr; /* Coluna da foto fixa, resto para os dados */
+    gap: 30px;
+    align-items: start;
+}
 
-    body{
-        background: #1a1a1a;
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
+/* --- Sidebar Esquerda (Foto e Nome) --- */
+.perfil-sidebar {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    border-top: 5px solid #e65100; /* Linha laranja decorativa */
+}
+
+.avatar-wrapper {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    border: 4px solid #e65100;
+    overflow: hidden;
+}
+
+.perfil-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-sidebar h3 {
+    font-size: 20px;
+    color: #202020;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.badge-funcao {
+    display: inline-block;
+    background-color: rgba(230, 81, 0, 0.1);
+    color: #e65100;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.membro-desde {
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+}
+
+/* --- Bloco Direito (Dados Cadastrais) --- */
+.perfil-conteudo {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.perfil-conteudo h2 {
+    font-size: 24px;
+    color: #202020;
+    margin-bottom: 30px;
+    font-weight: 700;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 10px;
+}
+
+/* Formas e Inputs */
+.form-grupo {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-grupo label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 8px;
+}
+
+.form-grupo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background-color: #f9f9f9; /* Tom cinza claro para indicar que está travado (readonly) */
+    color: #333333;
+    font-size: 15px;
+    outline: none;
+}
+
+/* --- Botões de Ação --- */
+.perfil-botoes {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.perfil-botoes a {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.btn-editar {
+    background-color: #e65100;
+    color: #ffffff;
+    flex: 1;
+}
+
+.btn-editar:hover {
+    background-color: #bf4300;
+}
+
+.btn-meus-cursos {
+    background-color: #202020;
+    color: #ffffff;
+    flex: 1;
+}
+
+.btn-meus-cursos:hover {
+    background-color: #444444;
+}
+
+/* --- Responsividade (Celular) --- */
+@media (max-width: 768px) {
+    .perfil-container {
+        grid-template-columns: 1fr; /* Vira uma coluna única no mobile */
+        margin: 20px auto;
     }
 
-
-    /* CONTAINER */
-
-    .profile-wrapper{
-        margin-top: 40px;
-        margin-bottom: 40px;
+    .form-row {
+        grid-template-columns: 1fr; /* Quebra as linhas duplas em campos individuais */
+        gap: 0;
     }
 
-    .profile-layout{
-        background: #242424;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 0 20px rgba(0,0,0,.4);
-    }
-
-    /* COLUNA ESQUERDA */
-
-    .left-side{
-        background: #202020;
-        padding: 30px;
-        border-right: 1px solid #333;
-        height: 100%;
-    }
-
-    .profile-image{
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid #ff7300;
-        margin-bottom: 20px;
-    }
-
-    .profile-name{
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .profile-age{
-        color: #ff7300;
-        margin-bottom: 25px;
-    }
-
-    .mini-info{
-        background: #2e2e2e;
-        padding: 15px;
-        border-radius: 10px;
-        margin-top: 15px;
-    }
-
-    .mini-info strong{
-        color: #ff7300;
-    }
-
-    /* CENTRO */
-
-    .center-side{
-        padding: 35px;
-        border-right: 1px solid #333;
-    }
-
-    .section-title{
-        color: #ff7300;
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-
-    .resume-box{
-        background: #2c2c2c;
-        padding: 25px;
-        border-radius: 12px;
-        line-height: 1.8;
-        color: #d8d8d8;
-    }
-
-    /* DIREITA */
-
-    .right-side{
-        padding: 30px;
-        background: #202020;
-    }
-
-    .info-card{
-        background: #2d2d2d;
+    .perfil-conteudo {
         padding: 20px;
-        border-radius: 12px;
-        margin-bottom: 20px;
-        transition: .3s;
     }
 
-    .info-card:hover{
-        transform: translateY(-3px);
-        background: #343434;
+    .perfil-botoes {
+        flex-direction: column; /* Botões ficam um embaixo do outro */
     }
-
-    .info-title{
-        color: #ff7300;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    .tag{
-        display: inline-block;
-        background: #ff7300;
-        color: white;
-        padding: 6px 12px;
-        border-radius: 30px;
-        margin: 5px 5px 0 0;
-        font-size: 14px;
-    }
-
-    @media(max-width: 991px){
-
-        .left-side{
-            border-right: none;
-            border-bottom: 1px solid #333;
-        }
-
-        .center-side{
-            border-right: none;
-            border-bottom: 1px solid #333;
-        }
-
-    }
+}
