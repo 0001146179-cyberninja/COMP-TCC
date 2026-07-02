@@ -62,10 +62,31 @@
   echo("<h5><p>$cursoLinha1</p></h5>");
   echo("<h5>$cursoLinha2</p></h5>");
   echo("</div>");
-  
 
-  echo("<a href='../php/inscreverCurso.php?cursoId=$cursoId' id='subscribe' class='btn btn-orange' style='width: 40.8%;'>Inscreva-se</a>");
+  require_once '../php/connect.php';
+
+  $user = $_SESSION['email'] ?? null;
+  
+  $stmt = $pdo->prepare("SELECT cursos FROM usuarios WHERE email = :email");
+  $stmt->execute([':email' => $user]);
+
+  $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
+  
+  
+  $cursosArray = json_decode($resultado['cursos'] ?? '', true);
+  if (!is_array($cursosArray)) {
+      $cursosArray = [];
+  }
+
+  
+  if (in_array($cursoId, $cursosArray)){
+      echo("<button id='subscribe' class='btn btn-orange' style='width: 40.8%;'>Já inscrito</button>");
+  } else {
+      echo("<a href='../php/inscreverCurso.php?cursoId=$cursoId' id='subscribe' class='btn btn-orange' style='width: 40.8%;'>Inscreva-se</a>");
+  }
 
    ?>
 
-<?php include '../views/footer.php' ?>
+  <a href="oportunidades.php" class="voltar"><h3>Voltar</h3></a>
+
+  <?php include '../views/footer.php' ?>

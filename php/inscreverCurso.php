@@ -16,11 +16,11 @@
             exit; 
         }
 
-        // 
+
         $stmt = $pdo->prepare("SELECT cursos FROM usuarios WHERE email = :email");
         $stmt->execute([':email' => $user]);
         
-        // 
+
         $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
         
         

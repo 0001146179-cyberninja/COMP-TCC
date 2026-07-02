@@ -70,7 +70,7 @@
 
             <li class="nav-item">
               <a class="nav-link"
-                href="../pages/register.php">
+                href="../pages/cadastro.php">
                 Cadastro / Login
               </a>
             </li>

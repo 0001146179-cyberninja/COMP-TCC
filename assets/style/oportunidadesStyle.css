@@ -53,3 +53,21 @@ FBAF00 Amarelo
     display: block;
     justify-self: center;
 }
+
+.voltar{
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    margin-left: 32px;
+    margin-top: 48px;
+    transition: all .3s ease;
+}
+
+.voltar :hover{
+
+    color: #ff6600;
+    text-decoration: none;
+    transform: translateY(-8px);
+    transition: all .3s ease;
+
+}
