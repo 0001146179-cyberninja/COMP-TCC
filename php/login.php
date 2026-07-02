@@ -27,11 +27,27 @@
                     $valid = $checkPass->fetchColumn();
 
                     if ($valid){
-
+                            
                         $_SESSION['login'] = true;
                         $_SESSION['msg'] = 'Logado com sucesso!';
                         $_SESSION['type'] = 'Sucesso';
                         $_SESSION['email'] = $email;
+
+                        $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = :email");
+                        $stmt->execute([':email' => $_SESSION['email']]);
+
+
+                        $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
+
+                        $_SESSION['nome'] = $resultado['nome'];
+                        $_SESSION['senha'] = $resultado['senha'];
+                        $_SESSION['telefone'] = $resultado['telefone'];
+                        $_SESSION['cpf'] = $resultado['cpf'];
+                        $_SESSION['cnpj'] = $resultado['cnpj'];
+                        $_SESSION['genero'] = $resultado['genero'];
+                        $_SESSION['data_criacao'] = $resultado['data_criacao'];
+                        $_SESSION['data_atualizacao'] = $resultado['data_atualizacao'];
+
                         header("Location: ../pages/index.php");
 
                     } else {

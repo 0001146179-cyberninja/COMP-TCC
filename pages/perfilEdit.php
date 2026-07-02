@@ -28,46 +28,50 @@ include '../views/navbar.php';
     <div class="perfil-conteudo">
         <h2>Minhas Informações</h2>
         
-        <form class="perfil-form">
+        <form class="perfil-form" method="POST" action="../php/salvarAlteracoes.php">
             <div class="form-grupo">
                 <label for="nome">Nome Completo</label>
-                <input type="text" id="nome" value="<?= htmlspecialchars($_SESSION['nome'] ?? '') ?>" readonly>
+                <input name="nome" type="text" id="nome" value="<?= htmlspecialchars($_SESSION['nome'] ?? '') ?>">
             </div>
 
             <div class="form-grupo">
                 <label for="email">E-mail Cadastrado</label>
-                <input type="email" id="email" value="<?= htmlspecialchars($_SESSION['email'] ?? '') ?>" readonly>
+                <input name="email" type="email" id="email" value="<?= htmlspecialchars($_SESSION['email'] ?? '') ?>">
             </div>
 
             <div class="form-grupo">
-                <label for="email">Senha Cadastrada</label>
-                <input type="text" id="senha" value="<?= htmlspecialchars($_SESSION['senha'] ?? '') ?>" readonly>
+                <label for="senha">Senha Cadastrada</label>
+                <input name="senha" type="text" id="senha" value="<?= $_SESSION['senha'] ?>">
             </div>
-
 
             <div class="form-row">
                 <div class="form-grupo">
                     <label for="telefone">Telefone / WhatsApp</label>
-                    <input type="text" id="telefone" value="<?= htmlspecialchars($_SESSION['telefone'] ?? '') ?>" readonly>
+                    <input name="telefone" type="text" id="telefone" value="<?= htmlspecialchars($_SESSION['telefone'] ?? '') ?>">
                 </div>
                 <div class="form-grupo">
                     <label for="cpf">CPF</label>
-                    <input type="texT" id="cPF" value="<?= htmlspecialchars($_SESSION['cpf'] ?? '') ?>" readonly>
+                    <input name="cpf" type="texT" id="cpf" value="<?= htmlspecialchars($_SESSION['cpf'] ?? '') ?>">
                 </div>
             </div>
 
             <div class="form-grupo">
                 <label for="cnpj">CNPJ</label>
-                <input type="text" id="cnpj" value="<?= htmlspecialchars($_SESSION['cnpj'] ?? '') ?>" readonly>
+                <input name="cnpj" type="text" id="cnpj" value="<?= htmlspecialchars($_SESSION['cnpj'] ?? '') ?>">
             </div>
 
             <div class="form-grupo">
                 <label for="genero">Gênero</label>
-                <input type="text" id="genero" value="<?= htmlspecialchars($_SESSION['genero'] ?? '') ?>" readonly>
+                <select id="genero" name="genero" class="select-custom">
+                    <option value="" disabled selected>Selecione seu gênero</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro / Prefiro não dizer</option>
+                </select>
             </div>
 
             <div class="perfil-botoes">
-                <a href="perfilEdit.php" class="btn-editar">Editar Dados</a>
+                <button type="submit" class="btn-editar">Salvar Alterações</a>
             </div>
         </form>
     </div>

@@ -8,13 +8,13 @@ $_SESSION['login'] = false;
 
 //Informações do usuário
 
-$_SESSION['perfil'] = "";
-
 $_SESSION['nome'] = "";
+$_SESSION['senha'] = "";
 $_SESSION['telefone'] = "";
 $_SESSION['email'] = "";
 $_SESSION['cpf'] = "";
 $_SESSION['cnpj'] = "";
+$_SESSION['genero'] = "";
 $_SESSION['data_criacao'] = "";
 $_SESSION['data_atualizacao'] = "";
 

@@ -133,16 +133,6 @@
     background-color: #bf4300;
 }
 
-.btn-meus-cursos {
-    background-color: #202020;
-    color: #ffffff;
-    flex: 1;
-}
-
-.btn-meus-cursos:hover {
-    background-color: #444444;
-}
-
 /* --- Responsividade (Celular) --- */
 @media (max-width: 768px) {
     .perfil-container {
@@ -162,4 +152,22 @@
     .perfil-botoes {
         flex-direction: column; /* Botões ficam um embaixo do outro */
     }
+}
+
+.select-custom {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+/* Quando o usuário clica no select, ele ganha a borda laranja */
+.select-custom:focus {
+    border-color: #e65100;
 }
