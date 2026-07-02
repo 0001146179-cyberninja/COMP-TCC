@@ -116,7 +116,7 @@
             Perfil
         </a> <br>
 
-        <a href="/configuracoes" class="menu-item">
+        <a href="../PAGES/configuracoes.php" class="menu-item">
             <i class="bi bi-gear"></i>
             Configurações
         </a> <br>

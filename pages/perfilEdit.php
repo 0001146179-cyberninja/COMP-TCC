@@ -1,6 +1,8 @@
 <?php 
 session_start(); 
 
+include '../php/setupConfig.php';
+
 if ($_SESSION['login'] !== true) {
     header("Location: index.php");
     exit;

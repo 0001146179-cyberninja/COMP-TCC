@@ -1,4 +1,5 @@
 <?php session_start() ?>
+<?php include '../php/setupConfig.php' ?>
 <?php include '../views/header.php' ?>
 <?php include '../views/navbar.php' ?>
 <link rel="stylesheet" href="../assets/style/style.css">

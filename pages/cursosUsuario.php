@@ -1,5 +1,6 @@
 <?php session_start(); 
 include '../php/connect.php'; ?>
+<?php include '../php/setupConfig.php' ?>
 <?php include '../views/header.php' ?>
 <?php include '../views/navbar.php';
 ob_start();

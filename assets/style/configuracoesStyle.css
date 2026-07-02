@@ -1,0 +1,86 @@
+/* --- Configurações Gerais da Página --- */
+body {
+    background-color: #ffffff; /* Fundo levemente acinzentado para destacar os blocos */
+}
+
+/* --- Blocos de Texto Principais (.saiba-mais-page) --- */
+.config-page {
+    max-width: 70%;
+    margin: 30px auto; /* Centraliza na tela e dá espaço entre os blocos */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra bem leve e moderna */
+}
+
+/* Títulos principais dos blocos */
+.config-page h1 {
+    color: #000000; /* Laranja industrial do projeto */
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-left: 5px solid #000000; /* Barrinha charmosa do lado esquerdo do título */
+    padding-left: 12px;
+}
+
+/* Parágrafos dos blocos */
+.saiba-mais-page p {
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.6; /* Deixa o texto mais espaçado e confortável para ler */
+    margin: 0;
+}
+
+/* --- Seção de Cards (Missão, Visão e Valores) --- */
+.saiba-mais {
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    gap: 20px; /* Espaço entre os 3 cards */
+    justify-content: space-between;
+}
+
+/* Cada Card individual */
+.saiba-mais .item {
+    flex: 1; /* Faz com que os 3 cards tenham exatamente o mesmo tamanho */
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #e65100; /* Linha laranja decorativa no topo do card */
+    transition: transform 0.2s ease;
+}
+
+/* Efeito sutil ao passar o mouse nos cards */
+.saiba-mais .item:hover {
+    transform: translateY(-5px); /* O card sobe de leve */
+}
+
+/* Título dentro do card (Missão, Visão, Valores) */
+.saiba-mais .item h3 {
+    color: #202020;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Texto dentro do card */
+.saiba-mais .item p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- Ajuste Responsivo (Para Celulares) --- */
+@media (max-width: 768px) {
+    .saiba-mais {
+        flex-direction: column; /* Empilha os cards um embaixo do outro no celular */
+        padding: 0 15px;
+    }
+    .saiba-mais-page {
+        margin: 20px 15px; /* Dá margem nas laterais em telas pequenas */
+        padding: 20px;
+    }
+}

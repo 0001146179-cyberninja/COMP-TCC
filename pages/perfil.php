@@ -1,4 +1,7 @@
 <?php 
+
+include '../php/setupConfig.php';
+
 session_start(); 
 
 if ($_SESSION['login'] !== true) {
